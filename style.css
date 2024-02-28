@@ -3,7 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* Open Props */
+@import "https://unpkg.com/open-props"; 
 
 main {
 	background: gainsboro;
@@ -14,7 +15,7 @@ main {
 }
 
 article {
-	background: lightblue;
+	background: #FFFCF5;
 	padding: 2em;
 /* Vert center. horiz center */
 	display: flex;
@@ -30,13 +31,17 @@ h1 {
 }
 
 p {
+	/* Fall Back */
+	font-family: Arial, Helvetica, 	Trebuchet MS, and Verdana;
+	
+	/* Poppins Font */
 	font-family: "Poppins", sans-serif;
 	text-align: right-justify;
 }
 
-aside {
+/* aside {
 	background: lightcoral;
-}
+} */
 
 aside img {
   /* fit image to container	 */
