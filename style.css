@@ -3,11 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Open Props */
-@import "https://unpkg.com/open-props"; 
 
 main {
 	background: gainsboro;
+
 	
 /* 	Make 2 columns */
 	display: grid;
@@ -25,8 +24,15 @@ article {
 	
 }
 
+article img {
+	width: 150px;
+	height: 150px;
+}
+
 h1 {
 	font-family: "DM Serif Display", serif;
+	color: #374375;
+	font-size: 2rem;
 	
 }
 
@@ -51,4 +57,27 @@ aside img {
 	/* 	full height image. Fit to container, no stretching. */
 	height: 100vh;
 	object-fit: cover;
+}
+
+a {
+	color: #8D4F59;
+}
+a:link {
+	font-size: 1rem;
+	text-decoration: none;
+	display: inline-block;
+	padding: .5rem;
+}
+
+
+a:visited {
+	color: #DFAEA0;
+}
+
+a:hover {
+	color: #FFFCF5;
+	background: #374375;
+	margin-left: 16px;
+	transition: all 1s;
+	transform: scale(1.2)
 }
