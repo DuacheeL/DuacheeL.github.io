@@ -81,3 +81,11 @@ a:hover {
 	transition: all 1s;
 	transform: scale(1.2)
 }
+
+/* Media Queries */
+@media (max-width: 40em) {
+    main article {
+        flex-direction: column;
+        align-items: center;
+    }
+}
