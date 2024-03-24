@@ -87,5 +87,16 @@ a:hover {
     main article {
         flex-direction: column;
         align-items: center;
+		font-size: .70em;
     }
+
+	article img {
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
 }
+
