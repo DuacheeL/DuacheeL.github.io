@@ -1,55 +1,120 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* WS Paradose - From Envato */
 
 
-main {
+
+
+
+.logoContainer {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh;
+  }
+  
+  .dlLogo {
+	width: 90%;
+	height: auto; 
+
+  }
+
+
+  .button-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+  }
+  
+  .nav-button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid black;
+	border-radius: 50px;
+	text-decoration: none;
+	color: black;
+
+
+
+	transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+	background-color: black;
+	color: white;
+  }
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD WEBSITE CODE */
+
+/* main {
 	background: #FFFCF5;
 
 	
 /* 	Make 2 columns */
 	display: grid;
-	grid-template-columns: repeat(2, 1fr); /*1fr 1fr */
-}
+	/* grid-template-columns: repeat(2, 1fr); */
+/* } */
 
-article {
+/* article {
 	background: #FFFCF5;
 	padding: 2em;
 /* Vert center. horiz center */
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	
-}
+/* } */
 
-article img {
+/* article img { */
 	width: 150px;
 	height: 150px;
-}
+/* } */
 
-h1 {
+/* h1 { */
 	font-family: "DM Serif Display", serif;
 	color: #374375;
 	font-size: 2rem;
 	
-}
 
-p {
+
+/* p { */
 	/* Fall Back */
 	font-family: Arial, Helvetica, 	Trebuchet MS, and Verdana;
 	
 	/* Poppins Font */
 	font-family: "Poppins", sans-serif;
 	text-align: right-justify;
-}
+
 
 /* aside {
 	background: lightcoral;
 } */
 
-aside img {
+/* aside img { */
   /* fit image to container	 */
 	display: block;
 	max-width: 100%; 
@@ -57,34 +122,34 @@ aside img {
 	/* 	full height image. Fit to container, no stretching. */
 	height: 100vh;
 	object-fit: cover;
-}
 
-a {
+
+/* a { */
 	color: #8D4F59;
-}
-a:link {
+
+/* a:link { */
 	font-size: 1rem;
 	text-decoration: none;
 	display: inline-block;
 	padding: .5rem;
-}
 
 
-a:visited {
+
+/* a:visited { */
 	color: #DFAEA0;
-}
 
-a:hover {
+
+/* a:hover { */
 	color: #FFFCF5;
 	background: #374375;
 	margin-left: 16px;
 	transition: all 1s;
 	transform: scale(1.2)
-}
+
 
 /* Media Queries */
-@media (max-width: 40em) {
-    main article {
+/* @media (max-width: 40em) { */
+    /* main article {
         flex-direction: column;
         align-items: center;
 		font-size: .70em;
@@ -97,6 +162,6 @@ a:hover {
 
 	h1 {
 		font-size: 1.5rem;
-	}
-}
+	} */
 
+/* ----------------------------- */
