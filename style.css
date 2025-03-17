@@ -1,8 +1,16 @@
-/* Fonts */
+
+
+
+/* ------- Fonts --------- */
 /* WS Paradose - From Envato */
 
+@font-face {
+	font-family: "WsParadoseItalic";
+	src: url(/assets/fonts/WsParadoseItalic.css);
+}
 
 
+/* --------------------------- */
 
 
 .logoContainer {
@@ -34,7 +42,10 @@
 	text-decoration: none;
 	color: black;
 
+	font-family: 'WsParadoseItalic';
+	letter-spacing: .3px;
 
+	
 
 	transition: all 0.3s ease;
   }
