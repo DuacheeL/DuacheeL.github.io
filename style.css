@@ -5,38 +5,72 @@
 
 /* ------- Fonts --------- */
 /* WS Paradose - From Envato */
-
 @font-face {
 	font-family: "WsParadoseItalic";
 	src: url(/assets/fonts/WsParadoseItalic.css);
 }
 
 
+body {
+  overflow-x: hidden;
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  padding-left: 60px;
+}
+
+:root {
+  --primary-color: #D6D0E8;
+  --secondary-color: #F7CBD2;
+  --accent-color: #FFF2C7;
+  --text-color: black;
+}
+
+
+
+
 /* --------------------------- */
 
+.name {
+  font-family: 'WsParadoseItalic';
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-top: 20px;
+  letter-spacing: .3px;
+  padding-left: 60px;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--primary-color);
+}
 
-/* Logo Styling */
-.logoContainer {
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	height: 100vh;
-  }
-  
-  .dlLogo {
-	width: 90%;
-	height: auto; 
+.description-container {
+  margin: 100px 0 100px 0;
+  display: flex;
+  overflow: hidden;
 
-  }
+  .quote {
+  font-family: 'poppins';
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding-left: 60px;
+  letter-spacing: .3px;
+}
+}
+
+.panel {
+  flex: 0 0 100vw;
+  height: 100vh;
+  border: 3px solid pink;
+}
 
 
-/* Navigation Buttons */
+
+Navigation Buttons
 .button-container {
     display: flex;
     justify-content: center;
     gap: 90px;
     margin-top: 20px;
-	scale: 1.5;
+    transform: translateY(0px);
 }
 
 .nav-button {
@@ -53,13 +87,13 @@
 	background: white;
     transition: scale 0.5s ease,
 				color 0.10s ease;
-	
-		
 }
 
 /* Hover Gradient Animation */
 .nav-button:hover {
   background: linear-gradient(to right, #D6D0E8, #F7CBD2, #FFF2C7, #F7CBD2, #D6D0E8, #F7CBD2);
+
+  
   background-size: 400% 100%;
   
   color: white;
@@ -81,8 +115,45 @@
 
 /* ------------- */
 
+.top-container {
+  position: relative;
+  z-index: 10;
+	background: red;
+}
 
+.gd-projects-container {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.gd-projects {
+	display: flex;
+	flex-wrap: nowrap;
+/*   transform-origin: top right; */
+	background: blue;
+	border: 10px solid yellow;
+  width: 300vw;
   
+}
+
+.panel {
+  width: 720px;
+  height: 480px;
+/*   border: 3px solid yellow; */
+  overflow: hidden;
+	flex: 0 0 auto;
+	
+}
+
+.panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pin-spacer {
+  height: 0 !important;
+}
 
 
 
@@ -100,11 +171,9 @@
 
 
 
-	color: #FFFCF5;
-	background: #374375;
-	margin-left: 16px;
-	transition: all 1s;
-	transform: scale(1.2)
+
+
+	
 
 
 /* Media Queries */
