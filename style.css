@@ -92,11 +92,11 @@ h1 {
   }
 
 .description {
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
   color: var(--text-color);
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .description::before {
@@ -104,11 +104,35 @@ h1 {
   margin-left: .4em;
 }
 
+.button-group {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}
 
+.button {
+  padding: 0.3rem 3rem;
+  border: 1px solid var(--text-color);
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
 
-
-
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  background-color: black;
+  color: white;
+}
 
 
 
@@ -137,4 +161,8 @@ h1 {
 		font-size: 1.5rem;
 	} */
 
+  /* @media (max-width: 768px) {
+  .button-group {
+    flex-direction: column; /* Stack vertically on mobile */
+  } */
 /* ----------------------------- */
