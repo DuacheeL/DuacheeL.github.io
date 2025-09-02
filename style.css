@@ -13,6 +13,10 @@ body {
   padding: 0; 
   height: 100%; 
   padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+
+  font-family: 'Clash Display', sans-serif;
 }
 
 :root {
@@ -27,15 +31,78 @@ body {
 
 /* --------------------------- */
 
-h1 {
+header {
+  border-bottom: .25px solid #555555;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  
+  a {
   font-family: 'Clash Display', sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  }
+
+
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
 
+h1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8;
+  align-items: flex-start;
+  text-align: left;
+}
 
+.greeting {
+    font-weight: 400;
+    font-size: 8rem;
+  }
 
+.name {
+    font-weight: 500;
+    font-size: 11rem;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  
+  }
 
+.pronounciation {
+    position: absolute;
+    font-weight: 100;
+    font-size: 1rem;
+    right: 0;
+    top: -1.2rem;
+    white-space: nowrap;
+    text-transform: none;
+    letter-spacing: normal;
+  }
 
+.description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.description::before {
+  content: "— ";
+  margin-left: .4em;
+}
 
 
 
