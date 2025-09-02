@@ -4,7 +4,7 @@
 @import "https://unpkg.com/open-props";
 
 /* ------- Fonts --------- */
-@import "https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap";
+@import "https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap";
 
 
 body {
@@ -12,8 +12,8 @@ body {
   margin: 0; 
   padding: 0; 
   height: 100%; 
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 20px;
 
   font-family: 'Clash Display', sans-serif;
@@ -53,7 +53,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 h1 {
@@ -70,10 +70,10 @@ h1 {
   }
 
 .name {
-    font-weight: 500;
-    font-size: 11rem;
+    font-weight: 600;
+    font-size: 13rem;
     text-transform: uppercase;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
     position: relative;
     display: inline-block;
     width: fit-content;
@@ -82,10 +82,10 @@ h1 {
 
 .pronounciation {
     position: absolute;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1rem;
     right: 0;
-    top: -1.2rem;
+    top: -.3em;
     white-space: nowrap;
     text-transform: none;
     letter-spacing: normal;
@@ -93,15 +93,10 @@ h1 {
 
 .description {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   text-transform: uppercase;
-  margin-top: 4rem;
-}
-
-.description::before {
-  content: "— ";
-  margin-left: .4em;
+  margin-top: 0;
 }
 
 .button-group {
@@ -113,7 +108,7 @@ h1 {
   a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
 }
@@ -125,6 +120,7 @@ h1 {
   background-color: transparent;
   color: var(--primary-color);
   transition: 0.3s ease;
+  margin-top: 2rem;
 }
 
 .button:hover {
@@ -134,6 +130,27 @@ h1 {
   color: white;
 }
 
+
+.custom-dash::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: var(--text-color);
+  vertical-align: middle;
+  margin: 0 5px; 
+}
+
+.slogan {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
 
 
 
